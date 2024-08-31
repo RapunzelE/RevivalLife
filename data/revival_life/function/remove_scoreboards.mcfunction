@@ -1,0 +1,7 @@
+scoreboard objectives remove death_detector
+scoreboard objectives remove PlayerUUIDByte0
+scoreboard objectives remove PlayerUUIDByte1
+scoreboard objectives remove PlayerUUIDByte2
+scoreboard objectives remove PlayerUUIDByte3
+scoreboard objectives remove deaths
+scoreboard objectives remove RevivalLifeStorage

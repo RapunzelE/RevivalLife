@@ -1,0 +1,7 @@
+execute positioned 0 200 0 positioned over motion_blocking run playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 8
+execute positioned 0 200 0 positioned over motion_blocking run particle minecraft:squid_ink ~ ~ ~ 0.2 1 0.2 0.2 1000 force
+execute positioned 0 200 0 positioned over motion_blocking run setblock ~ ~ ~ air destroy
+execute positioned 0 200 0 positioned over motion_blocking run tp @e[type=item,limit=1,sort=nearest] @a[limit=1,sort=nearest]
+execute positioned 0 200 0 positioned over motion_blocking as @a[distance=0..32] unless score RevivalPossible RevivalLifeStorage = NullRef RevivalLifeStorage run title @s actionbar [{"color":"gold","obfuscated":true,"text":"____"},{"obfuscated":false,"text":"The Altar seems to refuse..."},{"obfuscated":true,"text":"____"}]
+execute positioned 0 200 0 positioned over motion_blocking as @a[distance=0..32] if score RevivalPossible RevivalLifeStorage = NullRef RevivalLifeStorage run title @s actionbar [{"color":"dark_red","obfuscated":true,"text":"____"},{"bold":true,"obfuscated":false,"text":"There are no lives left!"},{"bold":false,"obfuscated":true,"text":"____"}]
+execute positioned 0 200 0 positioned over motion_blocking as @a[distance=0..32] if score RevivalPossible RevivalLifeStorage = NullRef RevivalLifeStorage run summon lightning_bolt

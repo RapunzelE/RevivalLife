@@ -1,0 +1,3 @@
+execute positioned 0 200 0 positioned over motion_blocking as @e[type=marker,limit=1,sort=nearest] at @s run setblock ~ ~-1 ~ structure_void
+execute positioned 0 200 0 positioned over motion_blocking as @e[type=marker,limit=1,sort=nearest] at @s align xz run summon interaction ~0.5 ~-1 ~0.5
+execute positioned 0 200 0 positioned over motion_blocking as @e[type=marker,limit=1,sort=nearest] run kill @s

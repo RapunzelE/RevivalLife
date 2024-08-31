@@ -1,0 +1,4 @@
+function revival_life:init_scoreboards
+function revival_life:init_teams
+function revival_life:fountain_particles
+function revival_life:head_particles
